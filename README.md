@@ -1,7 +1,7 @@
 # Pokedex
 
 <center>
-    <img src="public/pokedex-logo.png" />
+    <img src="src/assets/pokedex-logo.png" />
 </center>
 
 ## 📃 About
