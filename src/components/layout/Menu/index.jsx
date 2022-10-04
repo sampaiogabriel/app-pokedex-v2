@@ -12,10 +12,14 @@ function Menu() {
         <SearchBar />
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" state={{ favorites: false }}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/favorites">Pokémons Favoritos</Link>
+            <Link to="/favorites" state={{ favorites: true }}>
+              Pokémons Favoritos
+            </Link>
           </li>
         </ul>
       </div>

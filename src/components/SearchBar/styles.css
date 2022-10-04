@@ -2,13 +2,22 @@
   outline: none;
   border-radius: 10px 0 0 10px;
   font-size: 24px;
+
+  padding: 2px;
 }
 
 .search-bar button {
   border-radius: 0px 10px 10px 0;
   font-size: 24px;
 
-  background-color: #7acaf9;
+  background-color: #4052d9;
   color: white;
   cursor: pointer;
+
+  padding: 2px;
+}
+
+.search-bar button:hover {
+  background-color: #ffe031;
+  color: #4052d9;
 }

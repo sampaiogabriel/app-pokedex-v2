@@ -1,0 +1,9 @@
+.pokemons-grid {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 150px);
+}
+
+.pokemons-grid div {
+  align-self: flex-end;
+}

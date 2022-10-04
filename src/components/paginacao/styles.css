@@ -1,0 +1,25 @@
+.paginacao {
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 100px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.paginacao button {
+  background-color: #4052d9;
+  cursor: pointer;
+
+  color: white;
+}
+
+.paginacao button:hover {
+  background-color: #ffe031;
+  color: #4052d9;
+}
+
+.paginacao p {
+  margin: 0px 10px 0px 10px;
+}
