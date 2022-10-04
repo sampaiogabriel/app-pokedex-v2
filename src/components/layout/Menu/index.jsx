@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../../assets/pokedex-logo.png';
-import SearchBar from '../../SearchBar';
+import SearchBar from '../../searchBar';
 import './styles.css';
 
 function Menu() {

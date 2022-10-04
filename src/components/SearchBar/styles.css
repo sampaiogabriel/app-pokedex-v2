@@ -1,0 +1,14 @@
+.search-bar input {
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  font-size: 24px;
+}
+
+.search-bar button {
+  border-radius: 0px 10px 10px 0;
+  font-size: 24px;
+
+  background-color: #7acaf9;
+  color: white;
+  cursor: pointer;
+}
