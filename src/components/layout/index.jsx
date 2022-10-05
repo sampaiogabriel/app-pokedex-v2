@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-import propTypes from 'prop-types';
+import P from 'prop-types';
 import React from 'react';
 import Menu from './Menu';
 import Helmet from './Helmet';
@@ -15,8 +14,8 @@ function Layout({ children }) {
   );
 }
 
-Layout.prototype = {
-  children: propTypes.element,
+Layout.propTypes = {
+  children: P.element.isRequired,
 };
 
 export default Layout;

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../../assets/pokedex-logo.png';
-import SearchBar from '../../searchBar';
 import './styles.css';
 
 function Menu() {
@@ -9,7 +8,7 @@ function Menu() {
     <nav>
       <img src={Logo} alt="Pokedex Logo" />
       <div className="menu">
-        <SearchBar />
+        {/* <SearchBar /> */}
         <ul>
           <li>
             <Link to="/" state={{ favorites: false }}>

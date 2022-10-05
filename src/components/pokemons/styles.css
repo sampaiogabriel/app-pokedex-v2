@@ -1,9 +1,25 @@
 .pokemons-grid {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   height: calc(100vh - 150px);
+
+  margin-top: 36px;
 }
 
-.pokemons-grid div {
-  align-self: flex-end;
+.pokemon-grid-search-pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.pokedex-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
 }

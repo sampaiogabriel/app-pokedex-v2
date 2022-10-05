@@ -1,19 +1,16 @@
 /* eslint-disable react/jsx-one-expression-per-line */
-import React, { useState } from 'react';
+import React from 'react';
+import P from 'prop-types';
 
 import './styles.css';
 
-function Paginacao() {
-  // eslint-disable-next-line no-unused-vars
-  const [pagAtual, setPagAtual] = useState(1);
-  const totalPages = 100;
-
+function Paginacao({ pagAtual, pagTotal, onLeftClick, onRightClick }) {
   const handleProxPagina = () => {
-    console.log('click esquerda pra direita');
+    onLeftClick();
   };
 
   const handleVoltarPagina = () => {
-    console.log('click direita para esquerda');
+    onRightClick();
   };
 
   return (
@@ -22,7 +19,7 @@ function Paginacao() {
         ⬅
       </button>
       <p>
-        {pagAtual} de {totalPages}
+        {pagAtual} de {pagTotal}
       </p>
       <button type="button" onClick={handleVoltarPagina}>
         ➡
@@ -30,5 +27,12 @@ function Paginacao() {
     </div>
   );
 }
+
+Paginacao.propTypes = {
+  pagAtual: P.string.isRequired,
+  pagTotal: P.string.isRequired,
+  onLeftClick: P.func.isRequired,
+  onRightClick: P.func.isRequired,
+};
 
 export default Paginacao;
